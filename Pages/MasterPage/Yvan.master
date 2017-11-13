@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Yvan.master.cs" Inherits="Pages_MasterPage_Yvan" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link href="../../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../resources/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <script src="../../resources/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="../../resources/bootstrap/js/bootstrap.min.js"></script>
+
+    <link href="../../resources/System/css/System.css" rel="stylesheet" />
+
+    <link href="../../resources/System/css/calendar.css" rel="stylesheet" />
+    <script src="../../resources/System/js/charts/jquery.flot.js"></script>
+    <script src="../../resources/System/js/charts/jquery.flot.time.js"></script>
+    <script src="../../resources/System/js/calendar.min.js"></script>
+    <script src="../../resources/System/js/functions.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="body_background">
+    <header id="header" class="media">
+        <a href="" id="menu-toggle"></a>
+        <a class="logo pull-left" href="Home.aspx">
+            <span style="font-family: brockscript; font-size: 45px">Yvan</span>
+        </a>
+
+        <div class="media-body">
+            <div class="media" id="top-menu">
+
+                <%--                <div class="pull-left tm-icon media-Home media-ul">
+                    <div class="media-li">
+                        <a href="#">
+                            <i class="fa fa-2x fa-home"></i></a>
+                    </div>
+                </div>
+                <div class="pull-left tm-icon media-ul">
+                    <div class="media-li">
+                        <a href="#">
+                            <i class="fa fa-2x fa-calendar" style="font-size:1.6em"></i></a>
+                    </div>
+                </div>--%>
+                <div id="time" class="pull-right">
+                    <span id="hours"></span>
+                    :
+                        <span id="min"></span>
+                    :
+                        <span id="sec"></span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="clearfix"></div>
+    <section id="main" class="p-relative" role="main">
+        <!-- Sidebar -->
+        <aside id="sidebar" style="height:91.8%">
+            <!-- Sidbar Widgets -->
+            <div class="side-widgets">
+                <!-- Calendar -->
+                <div class="s-widget m-b-25">
+                    <div id="sidebar-calendar"></div>
+                </div>
+                <!-- Feeds -->
+                <div class="s-widget m-b-25" style="margin-top: 12%">
+                    <h2 class="tile-title">Menu
+                    </h2>
+
+                    <div class="s-widget-body" style="margin-left: -20%">
+                        <ul class="s-widget-ul">
+                            <li><a href="../Home.aspx">首 页</a></li>
+                            <li><a href="#">动 态</a></li>
+                            <li><a href="#">活 动</a></li>
+                            <li><a href="#">相 册</a></li>
+                            <li><a href="#">设 置</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- Content -->
+        <section id="content" class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+    </section>
+
+</body>
+
+</html>
