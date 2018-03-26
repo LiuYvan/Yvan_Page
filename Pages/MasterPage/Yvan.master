@@ -74,7 +74,7 @@
 
                     <div class="s-widget-body" style="margin-left: -20%">
                         <ul class="s-widget-ul">
-                            <li><a href="../Home.aspx">首 页</a></li>
+                            <li><a href="../Pages/Home.aspx">首 页</a></li>
                             <li><a href="#">动 态</a></li>
                             <li><a href="#">活 动</a></li>
                             <li><a href="#">相 册</a></li>

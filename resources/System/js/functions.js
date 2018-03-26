@@ -3,10 +3,9 @@ $(document).ready(function () {
 	Template Settings
     -----------------------------------------------------------*/
 
-    var settings =
-            //'<a id="settings" href="#changeSkin" data-toggle="modal">' +
-			//'<i class="fa fa-gear"></i> Change Skin' +
-		    //'</a>' +
+    var settings = '<a id="settings" href="#changeSkin" data-toggle="modal">' +
+			'<i class="fa fa-gear"></i> Change Skin' +
+		    '</a>' +
 		    '<div class="modal fade" id="changeSkin" tabindex="-1" role="dialog" aria-hidden="true">' +
 			'<div class="modal-dialog modal-lg">' +
 			    '<div class="modal-content">' +
@@ -63,7 +62,7 @@ $(document).ready(function () {
 			    '</div>' +
 			'</div>' +
 		    '</div>';
-    $('#main').prepend(settings);
+    //$('#main').prepend(settings);
 
     $('body').on('click', '.template-skins > a', function (e) {
         e.preventDefault();
